@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d1532dda-eefb-48f6-aada-39f509e2e0e7",
+		"name": "My work",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26126042"
+	},
+	"item": [
+		{
+			"name": "https://{domain}/ds/campusnexus/AcademicStatuses",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{domain}/ds/campusnexus/AcademicStatuses",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"AcademicStatuses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://{domain}/ds/campusnexus/AcademicStatuses(1)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{domain}/ds/campusnexus/AcademicStatuses(1)",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"AcademicStatuses(1)"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "username",
+			"value": "$USERNAME",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "$PASSWORD",
+			"type": "string"
+		},
+		{
+			"key": "domain",
+			"value": "$DOMAIN",
+			"type": "string"
+		}
+	]
+}
